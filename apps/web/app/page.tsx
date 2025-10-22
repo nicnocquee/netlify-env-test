@@ -3,7 +3,8 @@ import { PageClient } from "./page.client";
 import { env } from "@workspace/env";
 
 export default function Page() {
-  console.log(env.WHATSAPP_API_ACCESS_TOKEN);
+  const _ = env.WHATSAPP_API_ACCESS_TOKEN;
+  // do something with _
   return (
     <div className="flex items-center justify-center min-h-svh">
       <div className="flex flex-col items-center justify-center gap-4">

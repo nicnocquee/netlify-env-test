@@ -3,7 +3,8 @@ import { env } from "@workspace/env";
 import { headers } from "next/headers";
 
 export default async function Page() {
-  console.log(env.WHATSAPP_API_ACCESS_TOKEN);
+  const _ = env.WHATSAPP_API_ACCESS_TOKEN;
+  // do something with _
   const h = await headers();
   console.log(h);
   return (
